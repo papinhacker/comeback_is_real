@@ -28,7 +28,7 @@ console.log(myArray.filter((value, index, array) => {
     return value > array[index - 1]
 }));
 //4
-console.log(myArray.filter((value, index, array) => {
+console.log(myArray.find((value, index, array) => {
     return value === index
 }));
 //5
