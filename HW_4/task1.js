@@ -7,5 +7,5 @@
  * @type {number}
  */
 const salary = 1000;
-let grade= salary >= 1000 ? "middle" : "junior";
+let grade = salary >= 1000 ? "middle" : "junior";
 
