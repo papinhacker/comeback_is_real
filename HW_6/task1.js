@@ -27,14 +27,15 @@
 
 //1
 const firstArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const firstResult = [];
 for (let i of firstArr) {
     if (i % 2 === 0) {
-        firstArr[firstArr.indexOf(i)] = Math.pow(i, 2);
+        firstResult.push(Math.pow(i, 2));
     } else {
-        firstArr[firstArr.indexOf(i)] = Math.pow(i, 3);
+        firstResult.push(Math.pow(i, 3));
     }
 }
-console.log(firstArr);
+console.log(firstResult);
 
 //2
 const secondArr = [1, 2, 3, 4, 5];
