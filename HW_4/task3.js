@@ -7,14 +7,12 @@
 const minAge = 18;
 const maxAge = 60;
 let age = '2s';
-if (typeof (age) !== "number") {
-    if (/^\d+$/.test(age)) { // contains ONLY digits
+    if (/^\d+$/.test(age) { // contains ONLY digits
         age = parseInt(age);
         console.log("Data type was converted to number");
     } else {
         console.log("Incorrect data type");
     }
-}
 if (age < minAge) {
     console.log("You don't have access cause your age is " + age + " It's less then " + minAge);
 } else if (age >= minAge && age < maxAge) {
