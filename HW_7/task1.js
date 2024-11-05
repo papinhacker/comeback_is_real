@@ -24,7 +24,7 @@ console.log(mergeArrays([1, 2], [3, 4], [5, 6]))
 
 //2
 function convertSentenceToOddFormat(sentence) {
-    const words = sentence.split(' ');
+    const words = sentence.split(' ').map((st) => st.toLowerCase());
     words[0] = words[0].toLowerCase();
     for (let i = 1; i < words.length; i++) {
         words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
@@ -32,7 +32,7 @@ function convertSentenceToOddFormat(sentence) {
     return words.join('_');
 }
 
-console.log(convertSentenceToOddFormat("I am super engineer"))
+console.log(convertSentenceToOddFormat("I am super engiNeer"))
 
 //3
 function fibanacci(index) {
